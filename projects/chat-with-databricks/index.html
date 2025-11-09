@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat with Databricks · Case Study</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand"><a href="../../" style="text-decoration:none;color:inherit">FAZLEEM</a></div>
+      <nav>
+        <a href="../../#work">Work</a>
+        <a href="../../#about">About</a>
+        <a href="../../#contact">Contact</a>
+        <a href="../../assets/resume/Fazleem_Baig_Resume.pdf" download>Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <h1 class="section-title" style="font-size:36px">Chat with Databricks</h1>
+      <p>Conversational interface for governed Databricks SQL. Built with LangChain tool-calling, allowlisted views, PII redaction, and Delta audit trails.</p>
+
+      <h3>Problem</h3>
+      <p>Analysts need safe, conversational access to enterprise data without free-form SQL or credential risks.</p>
+
+      <h3>Solution</h3>
+      <ul>
+        <li>Tool-calling to Databricks SQL endpoint with allowlist</li>
+        <li>Query templates and result-size guardrails</li>
+        <li>PII masking and Delta audit logging</li>
+      </ul>
+
+      <h3>Architecture</h3>
+      <img src="../../assets/img/arch-diagram.png" alt="Architecture diagram" style="border:1px solid #e6eaf2;border-radius:12px;box-shadow:0 8px 24px rgba(15,26,42,.06)"/>
+
+      <h3>Links</h3>
+      <p><a href="#" target="_blank" rel="noopener">Live demo</a> · <a href="#" target="_blank" rel="noopener">GitHub repo</a></p>
+
+      <h3>Learnings</h3>
+      <ul>
+        <li>Schema-aware prompting lowered invalid SQL attempts</li>
+        <li>Delta audit simplified incident review</li>
+        <li>Prepared for RBAC via SCIM groups</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="wrap">© <span id="year"></span> Fazleem Baig</div></footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>
