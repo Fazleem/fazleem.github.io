@@ -1,34 +1,41 @@
-// current year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
+document.addEventListener('DOMContentLoaded', function() {
+  // set current year in footer
+  var y = new Date().getFullYear();
+  var el = document.getElementById('year');
+  if (el) el.textContent = y;
 
-// smooth-scroll for internal anchors
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click', e=>{
-    const id = a.getAttribute('href');
-    if (id && id.length > 1) {
-      const el = document.querySelector(id);
-      if (el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
-    }
-  });
-});
-
-// highlight active nav link while scrolling
-const navLinks = document.querySelectorAll('.nav a[href^="#"]');
-const sections = Array.from(navLinks).map(link => {
-  const target = document.querySelector(link.getAttribute('href'));
-  return target;
-}).filter(Boolean);
-
-if ('IntersectionObserver' in window && sections.length) {
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-      const activeLink = document.querySelector(`.nav a[href="#${entry.target.id}"]`);
-      if (!activeLink) return;
-      navLinks.forEach(link => link.classList.remove('active'));
-      activeLink.classList.add('active');
+  // mobile nav toggle
+  var toggle = document.getElementById('nav-toggle');
+  var links = document.getElementById('nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', function() {
+      links.classList.toggle('open');
     });
-  }, {threshold:0.5});
+  }
 
-  sections.forEach(section => observer.observe(section));
-}
+  // smooth scrolling for anchor links to account for sticky nav
+  var headerOffset = 80;
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+    anchor.addEventListener('click', function(e){
+      var href = anchor.getAttribute('href');
+      if (!href || href === '#' || href === '#0') return;
+      var target = document.querySelector(href);
+      if (target) {
+        e.preventDefault();
+        var elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        var offsetPosition = elementPosition - headerOffset;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+        // close mobile nav if open
+        if (links && links.classList.contains('open')) links.classList.remove('open');
+      }
+    });
+  });
+
+  // refresh AOS if loaded
+  if (window.AOS && typeof window.AOS.refresh === 'function') {
+    window.AOS.refresh();
+  }
+});

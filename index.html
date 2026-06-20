@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fazleem Baig · Data & GenAI Engineer</title>
-  <meta name="description" content="I help organizations design intelligent data systems that learn — Databricks, Azure, LangChain." />
+  <title>Fazleem Baig · AI + Data Engineer (Public-Sector & Regulated Analytics)</title>
+  <meta name="description" content="AI + Data Engineer building practical GenAI and data solutions for public-sector, health, and regulated environments." />
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <!-- AOS (Animate On Scroll) -->
@@ -14,111 +14,283 @@
 </head>
 <body>
   <!-- NAV -->
-  <header class="nav">
+  <header class="nav" role="banner">
     <div class="wrap nav-inner">
-      <div class="brand">FAZLEEM</div>
-      <nav>
+      <div class="brand">FAZLEEM BAIG</div>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="nav-links" class="nav-links" role="navigation">
         <a href="#work">Work</a>
-        <a href="#about">About</a>
+        <a href="#what">What I build</a>
+        <a href="#experience">Experience</a>
+        <a href="#toolkit">Toolkit</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap">
-      <h1 class="headline" data-aos="fade-up">
-        I help organizations design <span class="em">intelligent data systems</span> that learn.
-      </h1>
-      <div class="cta" data-aos="fade-up" data-aos-delay="100">
-        <a class="btn btn-primary" href="#contact">Work With Me</a>
-        <a class="btn btn-ghost" href="#work">View Projects</a>
-        <a class="btn btn-ghost" href="assets/resume-fazleem.pdf" download>Download Resume</a>
-      </div>
-    </div>
-    <div class="hero-fade"></div>
-  </section>
+  <!-- HERO: premium dark gradient + profile card -->
+  <section class="hero hero-premium">
+    <div class="wrap hero-inner" data-aos="fade-up">
+      <div class="hero-left">
+        <div class="eyebrow">AI + Data Engineer | Azure / Fabric | GenAI</div>
+        <h1 class="headline">AI + Data Engineer for Public-Sector and Regulated Analytics Modernization</h1>
+        <p class="subhead">I help public-sector, health, Crown, and regulated teams modernize analytics by combining trusted data pipelines, Azure/Fabric, and practical GenAI workflows such as RAG assistants, analytics copilots, and decision-support products.</p>
 
-  <!-- PORTFOLIO -->
-  <section id="work" class="section">
-    <div class="wrap">
-      <h2 class="section-title" data-aos="fade-up">Portfolio</h2>
-      <div class="grid">
-        <!-- Replace each card block with your real projects: edit title, description, tags, and URLs -->
-        <article class="card" data-aos="fade-up" data-aos-delay="80">
-          <h3>Chat with Databricks</h3>
-          <p>Conversational access to governed Databricks SQL with guardrails and audit trails.</p>
-          <div class="tags"><span>Databricks</span><span>Azure</span><span>LangChain</span></div>
-          <div class="links"><a href="#">Live demo</a><span>·</span><a href="#">Code</a></div>
-        </article>
+        <div class="cta">
+          <a class="btn btn-primary" href="#work">View work</a>
+          <a class="btn btn-ghost" href="assets/resume-fazleem.pdf" download>Download resume</a>
+          <a class="btn btn-outline" href="#contact">Contact</a>
+        </div>
 
-        <article class="card" data-aos="fade-up" data-aos-delay="160">
-          <h3>AI Data Quality Agent</h3>
-          <p>LLM-powered checks for anomalies, completeness, and rule violations in pipelines.</p>
-          <div class="tags"><span>LangGraph</span><span>n8n</span><span>Databricks</span></div>
-          <div class="links"><a href="#">Live demo</a><span>·</span><a href="#">Code</a></div>
-        </article>
-
-        <article class="card" data-aos="fade-up" data-aos-delay="240">
-          <h3>AI DataOps Crew</h3>
-          <p>Multi-agent orchestration for extract → validate → summarize workflows.</p>
-          <div class="tags"><span>CrewAI</span><span>LangGraph</span><span>Azure</span></div>
-          <div class="links"><a href="#">Live demo</a><span>·</span><a href="#">Code</a></div>
-        </article>
-
-        <article class="card" data-aos="fade-up" data-aos-delay="320">
-          <h3>AI Dashboard Explainer</h3>
-          <p>Turns SQL/PBI outputs into clear narratives and recommended actions.</p>
-          <div class="tags"><span>OpenAI</span><span>Streamlit</span><span>SQL</span></div>
-          <div class="links"><a href="#">Live demo</a><span>·</span><a href="#">Code</a></div>
-        </article>
+        <div class="cred-badges" aria-hidden="false" data-aos="fade-up" data-aos-delay="140">
+          <span class="badge-cred">Public-sector health data</span>
+          <span class="badge-cred">RBC enterprise analytics</span>
+          <span class="badge-cred">Applied ML background</span>
+          <span class="badge-cred">Azure / Fabric & GenAI</span>
+        </div>
       </div>
 
-      <div class="cred" data-aos="fade-up" data-aos-delay="120">
-        Trusted by teams working with <strong>Azure</strong>, <strong>Databricks</strong>, and enterprise data systems.
-      </div>
+      <aside class="hero-card" data-aos="fade-left" data-aos-delay="120">
+        <div class="hero-card-inner">
+          <img class="profile" src="assets/img/profile.jpeg" alt="Fazleem Baig portrait" />
+          <div class="hero-meta">
+            <div class="name">Fazleem Baig</div>
+            <div class="role">AI + Data Engineer — public-sector & regulated analytics</div>
+            <div class="location">Halifax, Nova Scotia · Remote / hybrid Canada</div>
+            <div class="availability">Available for contract & senior engagements</div>
+            <div class="hero-cta">
+              <a class="btn btn-sm" href="mailto:fazleem.baig@gmail.com">Email</a>
+              <a class="btn btn-sm btn-outline" href="assets/resume-fazleem.pdf" download>Resume</a>
+            </div>
+          </div>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section alt" data-aos="fade-up">
-    <div class="wrap about">
-      <div class="about-media" data-aos="fade-right" data-aos-delay="80">
-        <img src="assets/img/profile.jpeg" alt="Fazleem Baig portrait" />
+  <!-- CREDIBILITY STRIP -->
+  <section class="wrap cred-strip" data-aos="fade-up" data-aos-delay="160">
+    <div class="cred-card">
+      <h4>Public-sector health analytics</h4>
+      <p>Modernized program and clinical datasets with governance-first pipelines.</p>
+    </div>
+    <div class="cred-card">
+      <h4>Enterprise financial analytics</h4>
+      <p>Delivered production analytics and reporting in regulated environments.</p>
+    </div>
+    <div class="cred-card">
+      <h4>Applied ML & research</h4>
+      <p>Experience applying ML methods to health and product problems.</p>
+    </div>
+    <div class="cred-card">
+      <h4>Data quality & modernization</h4>
+      <p>Trusted data products, observability, and production-ready embeddings for RAG.</p>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK / CURRENT BUILDS -->
+  <section id="work" class="section" data-aos="fade-up">
+    <div class="wrap">
+      <h2 class="section-title">Selected work / current builds</h2>
+      <p class="muted">Short problem statements and what each build proves. Status is explicit where work is in progress.</p>
+
+      <div class="grid projects">
+        <!-- Project 1 -->
+        <article class="card project-card" data-aos="fade-up" data-aos-delay="60">
+          <div class="project-top" style="background:linear-gradient(90deg,#06b6d4,#7c3aed);">
+            <div class="project-icon" aria-hidden="true">
+              <!-- small doc SVG -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 2h7l5 5v13a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" fill="#fff"/></svg>
+            </div>
+            <div class="project-title">Public-Sector Document AI Assistant</div>
+            <div class="status badge">Build in progress</div>
+          </div>
+          <div class="project-body">
+            <p class="lead">Problem: Teams need searchable regulatory documents and auditable answers.</p>
+            <p class="muted">What it proves: Ingest → semantic index → RAG with citations and audit trails for governance-sensitive content.</p>
+            <div class="tags"><span>RAG</span><span>Azure</span><span>Governance</span></div>
+            <div class="links">
+              <a class="btn btn-ghost disabled" href="#" aria-disabled="true">Demo coming soon</a>
+              <a class="btn btn-ghost disabled" href="#" aria-disabled="true">GitHub coming soon</a>
+              <a class="btn btn-ghost disabled" href="#" aria-disabled="true">Case study coming soon</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card project-card" data-aos="fade-up" data-aos-delay="120">
+          <div class="project-top" style="background:linear-gradient(90deg,#7c3aed,#06b6d4);">
+            <div class="project-icon" aria-hidden="true">
+              <!-- small heart/health SVG -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21s-8-6.5-8-11.5S7 3 12 7s8-1.5 8 2.5S12 21 12 21z" fill="#fff"/></svg>
+            </div>
+            <div class="project-title">Health Analytics Copilot</div>
+            <div class="status badge">Build in progress</div>
+          </div>
+          <div class="project-body">
+            <p class="lead">Problem: Analysts need fast cohort exploration, explainable alerts, and operational recommendations.</p>
+            <p class="muted">What it proves: Contextual copilots that surface drivers and recommended interventions with explainability front-and-center.</p>
+            <div class="tags"><span>Health</span><span>Privacy</span><span>Explainability</span></div>
+            <div class="links">
+              <a class="btn btn-ghost disabled" href="#" aria-disabled="true">Demo coming soon</a>
+              <a class="btn btn-ghost disabled" href="#" aria-disabled="true">GitHub coming soon</a>
+              <a class="btn btn-ghost disabled" href="#" aria-disabled="true">Case study coming soon</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card project-card" data-aos="fade-up" data-aos-delay="180">
+          <div class="project-top" style="background:linear-gradient(90deg,#0ea5a4,#6366f1);">
+            <div class="project-icon" aria-hidden="true">
+              <!-- small pipeline SVG -->
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18v3H3zM3 11h12v3H3zM3 16h6v3H3z" fill="#fff"/></svg>
+            </div>
+            <div class="project-title">Fabric + GenAI Data Pipeline</div>
+            <div class="status badge">Build in progress</div>
+          </div>
+          <div class="project-body">
+            <p class="lead">Problem: Production pipelines must feed trustworthy embeddings and data products for downstream RAG systems.</p>
+            <p class="muted">What it proves: Fabric-based ETL, curated embeddings, and secure prompt pipelines designed for compliance and observability.</p>
+            <div class="tags"><span>Fabric</span><span>Databricks</span><span>GenAI</span></div>
+            <div class="links">
+              <a class="btn btn-ghost disabled" href="#" aria-disabled="true">Demo coming soon</a>
+              <a class="btn btn-ghost disabled" href="#" aria-disabled="true">GitHub coming soon</a>
+              <a class="btn btn-ghost disabled" href="#" aria-disabled="true">Case study coming soon</a>
+            </div>
+          </div>
+        </article>
       </div>
-      <div class="about-body" data-aos="fade-left" data-aos-delay="160">
-        <h2 class="section-title">About</h2>
-        <p>I’m Fazleem, a data & GenAI engineer based in Nova Scotia. I connect governed enterprise data with modern AI tooling to deliver reliable, production-ready systems.</p>
-        <ul class="bullets">
-          <li>8+ years across analytics & cloud data platforms</li>
-          <li>Focus on GenAI integrations using Databricks + Azure</li>
-          <li>Strong public-sector background in data governance</li>
-        </ul>
-        <div class="about-stack">
-          <span>Databricks</span><span>Azure</span><span>SQL</span><span>LangChain</span><span>CrewAI</span><span>n8n</span><span>Python</span>
+    </div>
+  </section>
+
+  <!-- WHAT I BUILD (outcome-focused) -->
+  <section id="what" class="section alt" data-aos="fade-up">
+    <div class="wrap">
+      <h2 class="section-title">What I build</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Grounded document assistants</h3>
+          <p>RAG systems that return verifiable answers with citations and audit logs.</p>
+        </div>
+        <div class="feature">
+          <h3>AI-enabled analytics workflows</h3>
+          <p>Copilots and automation that accelerate analyst workflows and decision-making.</p>
+        </div>
+        <div class="feature">
+          <h3>Fabric & Databricks data products</h3>
+          <p>Production-ready pipelines, trusted tables, and observability for regulated reporting.</p>
+        </div>
+        <div class="feature">
+          <h3>Public-sector modernization</h3>
+          <p>Governance-first approaches for health, program, and Crown datasets.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="wrap contact">
-      <h2 class="section-title" data-aos="fade-up">Let’s build something intelligent.</h2>
-      <p class="contact-sub" data-aos="fade-up" data-aos-delay="80">Prefer email or LinkedIn — I keep it simple.</p>
-      <div class="contact-actions" data-aos="fade-up" data-aos-delay="160">
-        <a class="btn btn-primary" href="mailto:fazleem.apple@gmail.com">Email Me</a>
+  <!-- EXPERIENCE HIGHLIGHTS -->
+  <section id="experience" class="section" data-aos="fade-up">
+    <div class="wrap">
+      <h2 class="section-title">Experience highlights</h2>
+      <div class="timeline-cards">
+        <div class="exp-card">
+          <div class="exp-org">Government of Nova Scotia / DHW</div>
+          <div class="exp-role">Public-sector health data modernization</div>
+          <div class="exp-copy muted">Led governance-first pipelines and reporting for program and analytics teams.</div>
+          <div class="exp-tags"><span>Health</span><span>Governance</span><span>Fabric</span></div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-org">RBC Capital Markets</div>
+          <div class="exp-role">Enterprise analytics — regulated environment</div>
+          <div class="exp-copy muted">Delivered production analytics and reporting frameworks for trading & risk teams.</div>
+          <div class="exp-tags"><span>Financial</span><span>SQL</span><span>Production</span></div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-org">JackHabbit</div>
+          <div class="exp-role">ML & product engineering</div>
+          <div class="exp-copy muted">Built customer-facing ML features and data products at startup pace.</div>
+          <div class="exp-tags"><span>Startup</span><span>ML</span><span>Product</span></div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-org">STFX (research)</div>
+          <div class="exp-role">Applied ML and health research</div>
+          <div class="exp-copy muted">Academic and applied work on ML methods in health datasets.</div>
+          <div class="exp-tags"><span>Research</span><span>ML</span><span>Health</span></div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-org">TCS</div>
+          <div class="exp-role">Software & analytics foundation</div>
+          <div class="exp-copy muted">Early platform and analytics exposure with strong engineering fundamentals.</div>
+          <div class="exp-tags"><span>Engineering</span><span>Python</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLKIT -->
+  <section id="toolkit" class="section alt" data-aos="fade-up">
+    <div class="wrap">
+      <h2 class="section-title">Technical toolkit</h2>
+      <div class="tool-grid">
+        <div class="tool-col">
+          <h4>AI / GenAI</h4>
+          <div class="tool-tags"><span>RAG</span><span>LLMs</span><span>Prompt engineering</span><span>Explainability</span></div>
+        </div>
+        <div class="tool-col">
+          <h4>Data engineering</h4>
+          <div class="tool-tags"><span>Fabric</span><span>Databricks</span><span>ETL</span><span>Embeddings</span></div>
+        </div>
+        <div class="tool-col">
+          <h4>Analytics / BI</h4>
+          <div class="tool-tags"><span>SQL</span><span>Power BI</span><span>Dashboards</span></div>
+        </div>
+        <div class="tool-col">
+          <h4>Cloud & platforms</h4>
+          <div class="tool-tags"><span>Azure</span><span>ADLS</span><span>Git</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPPORTUNITIES I'M OPEN TO -->
+  <section class="section" data-aos="fade-up">
+    <div class="wrap">
+      <h2 class="section-title">Opportunities I'm open to</h2>
+      <p class="muted">Open to senior AI & data roles and contract engagements focused on trusted AI, analytics modernization, and public-sector work.</p>
+      <div class="roles-tiles">
+        <div class="role-tile">AI Engineer / GenAI Developer</div>
+        <div class="role-tile">Data + AI Engineer</div>
+        <div class="role-tile">Fabric / Analytics Engineer</div>
+        <div class="role-tile">Senior public-sector data roles</div>
+      </div>
+      <p class="muted small">Open to remote or hybrid Canada opportunities where AI, trusted data, and analytics modernization are central to the work.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT — strong final CTA -->
+  <section id="contact" class="section alt" data-aos="fade-up">
+    <div class="wrap contact-cta">
+      <div class="contact-left">
+        <h2 class="section-title">Let's build something practical</h2>
+        <p class="muted">Email: <a href="mailto:fazleem.baig@gmail.com">fazleem.baig@gmail.com</a> · Location: Halifax, Nova Scotia, Canada</p>
+      </div>
+      <div class="contact-right">
+        <a class="btn btn-primary" href="mailto:fazleem.baig@gmail.com">Email me</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/YOURID" target="_blank" rel="noopener">LinkedIn</a>
         <a class="btn btn-ghost" href="https://github.com/YOURID" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-ghost" href="assets/resume-fazleem.pdf" download>Download Resume</a>
+        <a class="btn btn-ghost" href="assets/resume-fazleem.pdf" download>Download resume</a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="wrap">© <span id="year"></span> Fazleem Baig · Nova Scotia · Data & GenAI Engineer</div>
+    <div class="wrap">© <span id="year"></span> Fazleem Baig · Halifax, Nova Scotia · AI + Data Engineer</div>
   </footer>
 
   <!-- Scripts -->
