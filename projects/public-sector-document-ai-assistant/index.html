@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Public-Sector Document AI Assistant - Case Study</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand" href="../../">
+        <span>Fazleem Baig</span>
+        <small>AI + Data Engineer</small>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <nav id="nav-links" class="nav-links">
+        <a href="../../#work">Work</a>
+        <a href="../../#focus">Focus</a>
+        <a href="../../#contact">Contact</a>
+        <a href="../../assets/docs/resume-fazleem.pdf" download>Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section case-study">
+    <div class="wrap case-study-wrap">
+      <p class="section-kicker">Build in progress</p>
+      <h1>Public-Sector Document AI Assistant</h1>
+      <p>RAG assistant concept for policy, regulatory, and program documents where answers need citations, traceability, and audit-ready retrieval behavior.</p>
+
+      <h3>Problem</h3>
+      <p>Public-sector teams often manage large policy and program document collections where staff need fast answers, but answers must remain grounded in source material.</p>
+
+      <h3>Delivery Focus</h3>
+      <ul>
+        <li>Document ingestion and metadata-aware chunking</li>
+        <li>Semantic retrieval with source citations</li>
+        <li>Review trails for prompts, retrieved passages, and generated answers</li>
+      </ul>
+
+      <h3>Architecture</h3>
+      <div class="architecture-flow" aria-label="Architecture flow">
+        <div>
+          <span>01</span>
+          <strong>Document intake</strong>
+          <p>Policies, procedures, program guides, and regulatory documents are normalized for retrieval.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>Semantic index</strong>
+          <p>Chunks, metadata, and embeddings support filtered search and source-grounded context.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>Cited response</strong>
+          <p>The assistant returns answers with source references and confidence-aware language.</p>
+        </div>
+        <div>
+          <span>04</span>
+          <strong>Review trail</strong>
+          <p>Prompts, retrieved sources, generated answers, and reviewer notes remain auditable.</p>
+        </div>
+      </div>
+
+      <h3>Status</h3>
+      <p>Build in progress. Demo coming soon. GitHub coming soon. Case study coming soon.</p>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="wrap">© <span id="year"></span> Fazleem Baig</div></footer>
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

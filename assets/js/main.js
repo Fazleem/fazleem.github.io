@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
   var links = document.getElementById('nav-links');
   if (toggle && links) {
     toggle.addEventListener('click', function() {
-      links.classList.toggle('open');
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   }
 
@@ -29,13 +30,11 @@ document.addEventListener('DOMContentLoaded', function() {
           behavior: "smooth"
         });
         // close mobile nav if open
-        if (links && links.classList.contains('open')) links.classList.remove('open');
+        if (links && links.classList.contains('open')) {
+          links.classList.remove('open');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        }
       }
     });
   });
-
-  // refresh AOS if loaded
-  if (window.AOS && typeof window.AOS.refresh === 'function') {
-    window.AOS.refresh();
-  }
 });
