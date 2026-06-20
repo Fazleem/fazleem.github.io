@@ -3,26 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chat with Databricks · Case Study</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <title>Chat with Databricks - Case Study</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../assets/css/main.css" />
 </head>
 <body>
-  <header class="nav">
+  <header class="site-header">
     <div class="wrap nav-inner">
-      <div class="brand"><a href="../../" style="text-decoration:none;color:inherit">FAZLEEM</a></div>
-      <nav>
+      <a class="brand" href="../../">
+        <span>Fazleem Baig</span>
+        <small>AI + Data Engineer</small>
+      </a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav id="nav-links" class="nav-links">
         <a href="../../#work">Work</a>
-        <a href="../../#about">About</a>
+        <a href="../../#focus">Focus</a>
         <a href="../../#contact">Contact</a>
-        <a href="../../assets/resume/Fazleem_Baig_Resume.pdf" download>Resume</a>
+        <a href="../../assets/docs/resume-fazleem.pdf" download>Resume</a>
       </nav>
     </div>
   </header>
 
-  <section class="section">
-    <div class="wrap">
-      <h1 class="section-title" style="font-size:36px">Chat with Databricks</h1>
+  <section class="section case-study">
+    <div class="wrap case-study-wrap">
+      <p class="section-kicker">Case study</p>
+      <h1>Chat with Databricks</h1>
       <p>Conversational interface for governed Databricks SQL. Built with LangChain tool-calling, allowlisted views, PII redaction, and Delta audit trails.</p>
 
       <h3>Problem</h3>
@@ -36,7 +41,28 @@
       </ul>
 
       <h3>Architecture</h3>
-      <img src="../../assets/img/arch-diagram.png" alt="Architecture diagram" style="border:1px solid #e6eaf2;border-radius:12px;box-shadow:0 8px 24px rgba(15,26,42,.06)"/>
+      <div class="architecture-flow" aria-label="Architecture flow">
+        <div>
+          <span>01</span>
+          <strong>Analyst prompt</strong>
+          <p>Question enters a constrained assistant workflow rather than direct database access.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <strong>Tool guardrails</strong>
+          <p>LangChain tool-calling maps the request to allowlisted views and query templates.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <strong>Databricks SQL</strong>
+          <p>Queries run with result-size controls, PII masking, and credential separation.</p>
+        </div>
+        <div>
+          <span>04</span>
+          <strong>Audit trail</strong>
+          <p>Delta logging captures prompts, generated queries, responses, and review metadata.</p>
+        </div>
+      </div>
 
       <h3>Links</h3>
       <p><a href="#" target="_blank" rel="noopener">Live demo</a> · <a href="#" target="_blank" rel="noopener">GitHub repo</a></p>
